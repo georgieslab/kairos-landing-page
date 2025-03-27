@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 900 800" style="enable-background:new 0 0 900 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2B463C;}
+	.st1{font-family:'Arial-BoldMT';}
+	.st2{font-size:24px;}
+	.st3{fill:#558B6E;stroke:#333333;}
+	.st4{fill:#FFFFFF;}
+	.st5{font-family:'ArialMT';}
+	.st6{font-size:14px;}
+	.st7{fill:#FFFFFF;stroke:#4C9265;stroke-width:2;stroke-miterlimit:10;}
+	.st8{fill:#F9DCC4;stroke:#333333;}
+	.st9{fill:#333333;}
+	.st10{fill:#666666;}
+	.st11{font-size:18px;}
+	.st12{fill:#E6B89C;stroke:#333333;}
+	.st13{font-size:12px;}
+	.st14{fill:#2B463C;stroke:#333333;}
+</style>
+<text transform="matrix(1 0 0 1 299.209 28)" class="st0 st1 st2">Καιρός User Journey Flow</text>
+<ellipse class="st3" cx="454.5" cy="62.5" rx="50" ry="25"/>
+<text transform="matrix(1 0 0 1 439.6838 67.5)" class="st4 st5 st6">Start</text>
+<path class="st7" d="M107.2,112.5h708.5c5.8,0,10.4,4.5,10.4,10v200c0,5.5-4.7,10-10.4,10H107.2c-5.8,0-10.4-4.5-10.4-10v-200
+	C96.8,117,101.5,112.5,107.2,112.5z"/>
+<rect x="366.5" y="112.5" class="st8" width="176" height="40"/>
+<text transform="matrix(1 0 0 1 399.9909 137.5)" class="st9 st5 st6">Purchase Journal</text>
+<rect x="366.5" y="172.5" class="st8" width="176" height="40"/>
+<text transform="matrix(1 0 0 1 409.322 197.5)" class="st9 st5 st6">Download App</text>
+<rect x="366.5" y="232.5" class="st8" width="176" height="40"/>
+<text transform="matrix(1 0 0 1 406.6047 257.5)" class="st9 st5 st6">Create Account</text>
+<rect x="366.5" y="292.5" class="st8" width="176" height="40"/>
+<text transform="matrix(1 0 0 1 382.884 317.5)" class="st9 st5 st6">Scan Journal with NFC</text>
+<rect x="170" y="232.5" class="st8" width="169" height="40"/>
+<text transform="matrix(1 0 0 1 203.4977 257.5)" class="st9 st5 st6">Register Journal</text>
+<rect x="184.5" y="292.5" class="st8" width="140" height="40"/>
+<text transform="matrix(1 0 0 1 191.8185 317.5)" class="st9 st5 st6">Select Journey Path</text>
+<rect x="574.5" y="232.5" class="st8" width="160" height="40"/>
+<text transform="matrix(1 0 0 1 580.136 257.5)" class="st9 st5 st6">Choose Journey Length</text>
+<rect x="584.5" y="292.5" class="st8" width="140" height="40"/>
+<text transform="matrix(1 0 0 1 589.1183 317.5)" class="st9 st5 st6">Receive First Prompt</text>
+<path class="st9" d="M0,0"/>
+<path class="st10" d="M434.5,112.5"/>
+<path class="st10" d="M0,0"/>
+<path class="st10" d="M454.5,172.5"/>
+<path class="st10" d="M0,0"/>
+<path class="st10" d="M454.5,232.5"/>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="461.5,274.9 454.5,288.2 447.5,274.9 "/>
+<polygon class="st10" points="461.5,215.8 454.5,229.2 447.5,215.8 "/>
+<polygon class="st10" points="461.5,156.8 454.5,170.1 447.5,156.8 "/>
+<polygon class="st10" points="461.5,97.8 454.5,111.1 447.5,97.8 "/>
+<path class="st10" d="M454.5,292.5"/>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="362.7,259.5 342.7,252.5 362.7,245.5 "/>
+<path class="st10" d="M324.5,252.5"/>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="261.5,274.9 254.5,288.2 247.5,274.9 "/>
+<polygon class="st10" points="261.5,340.8 254.5,354.2 247.5,340.8 "/>
+<polygon class="st10" points="461.5,340.8 454.5,354.2 447.5,340.8 "/>
+<polygon class="st10" points="661.5,340.8 654.5,354.2 647.5,340.8 "/>
+<path class="st10" d="M254.5,292.5"/>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="548.5,245.5 568.5,252.5 548.5,259.5 "/>
+<path class="st10" d="M584.5,252.5"/>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="661.5,274.9 654.5,288.2 647.5,274.9 "/>
+<path class="st10" d="M654.5,292.5"/>
+<path class="st7" d="M107.2,362.5h708.5c5.8,0,10.4,4.5,10.4,10v200c0,5.5-4.7,10-10.4,10H107.2c-5.8,0-10.4-4.5-10.4-10v-200
+	C96.8,367,101.5,362.5,107.2,362.5z"/>
+<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 86.0209 562.5)" class="st9 st5 st11">Daily Journaling Cycle</text>
+<rect x="384.5" y="392.5" class="st3" width="140" height="40"/>
+<text transform="matrix(1 0 0 1 405.9655 417.5)" class="st4 st5 st6">Write in Journal</text>
+<rect x="384.5" y="452.5" class="st3" width="140" height="40"/>
+<text transform="matrix(1 0 0 1 395.3151 477.5)" class="st4 st5 st6">Scan Journal Page</text>
+<polygon class="st12" points="454.5,512.5 522.5,542.5 454.5,572.5 386.5,542.5 "/>
+<text transform="matrix(1 0 0 1 403.8874 547.5)" class="st9 st5 st6">Privacy Setting?</text>
+<rect x="117.8" y="522.5" class="st3" width="140" height="40"/>
+<text transform="matrix(1 0 0 1 134.4932 547.5)" class="st4 st5 st6">Local Processing</text>
+<rect x="664.5" y="522.5" class="st3" width="140" height="40"/>
+<text transform="matrix(1 0 0 1 679.6046 547.5)" class="st4 st5 st6">Cloud Processing</text>
+<rect x="121.8" y="621.5" class="st3" width="140" height="40"/>
+<text transform="matrix(1 0 0 1 148.6325 646.5133)" class="st4 st5 st6">Basic Insights</text>
+<rect x="664.5" y="621.5" class="st3" width="140" height="40"/>
+<text transform="matrix(1 0 0 1 677.2633 646.5133)" class="st4 st5 st6">Advanced Insights</text>
+<rect x="384.5" y="622.5" class="st3" width="140" height="40"/>
+<text transform="matrix(1 0 0 1 396.3371 647.5)" class="st4 st5 st6">Next Day&apos;s Prompt</text>
+<path class="st4" d="M0,0"/>
+<path class="st10" d="M384.5,392.5"/>
+<path class="st10" d="M0,0"/>
+<path class="st10" d="M524.5,392.5"/>
+<path class="st10" d="M0,0"/>
+<path class="st10" d="M454.5,452.5"/>
+<path class="st10" d="M0,0"/>
+<path class="st10" d="M454.5,512.5"/>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="286.4,549.5 266.4,542.5 286.4,535.5 "/>
+<path class="st10" d="M324.5,542.5"/>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="637.5,535.5 657.5,542.5 637.5,549.5 "/>
+<path class="st10" d="M584.5,542.5"/>
+<text transform="matrix(1 0 0 1 304.9109 547.5)" class="st10 st5 st13">Local Only</text>
+<text transform="matrix(1 0 0 1 535.9109 547.3499)" class="st10 st5 st13">Cloud Enabled</text>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="201.8,562.5 194.8,572.5 187.8,562.5 "/>
+<path class="st10" d="M254.5,582.5"/>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="741.5,562.5 734.5,572.5 727.5,562.5 "/>
+<polygon class="st10" points="201.8,597 194.8,619.1 187.8,597 "/>
+<polygon class="st10" points="741.5,597 734.5,619.1 727.5,597 "/>
+<path class="st10" d="M654.5,582.5"/>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="276.4,635.5 296.4,642.5 276.4,649.5 "/>
+<polygon class="st10" points="304.9,635.5 324.9,642.5 304.9,649.5 "/>
+<polygon class="st10" points="333.4,635.5 353.4,642.5 333.4,649.5 "/>
+<path class="st10" d="M384.5,642.5"/>
+<path class="st10" d="M0,0"/>
+<path class="st10" d="M524.5,642.5"/>
+<path class="st10" d="M0,0"/>
+<path class="st10" d="M524.5,417.5"/>
+<path class="st7" d="M107.2,682.5h708.5c5.8,0,10.4,6,10.4,13.5v80.9c0,7.4-4.7,13.5-10.4,13.5H107.2c-5.8,0-10.4-6-10.4-13.5V696
+	C96.8,688.5,101.5,682.5,107.2,682.5z"/>
+<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 65.6025 770.5449)" class="st9 st5 st11">Journey</text>
+<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 87.2025 786.5449)" class="st9 st5 st11">Progression</text>
+<rect x="129.8" y="718.5" class="st14" width="140" height="40"/>
+<text transform="matrix(1 0 0 1 152.5724 743.5267)" class="st4 st5 st6">Track Progress</text>
+<polygon class="st12" points="449.7,708.5 534.7,738.5 449.7,768.5 364.7,738.5 "/>
+<text transform="matrix(1 0 0 1 389.0413 743.5267)" class="st9 st5 st6">Journey Complete?</text>
+<rect x="625.2" y="718.5" class="st8" width="140" height="40"/>
+<text transform="matrix(1 0 0 1 632.9138 743.5267)" class="st9 st5 st6">Select New Journey</text>
+<path class="st9" d="M0,0"/>
+<polygon class="st10" points="456.7,685.5 449.7,705.5 442.7,685.5 "/>
+<path class="st10" d="M454.5,712.5"/>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="287.8,745.5 267.8,738.5 287.8,731.5 "/>
+<path class="st10" d="M269.8,738.5"/>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="607.2,731.5 627.2,738.5 607.2,745.5 "/>
+<path class="st10" d="M625.2,738.5"/>
+<text transform="matrix(1 0 0 1 320.1854 743.5267)" class="st10 st5 st13">No</text>
+<text transform="matrix(1 0 0 1 562.238 743.5267)" class="st10 st5 st13">Yes</text>
+<path class="st10" d="M0,0"/>
+<polygon class="st10" points="637.5,648.5 617.5,641.5 637.5,634.5 "/>
+<polygon class="st10" points="612.2,648.5 592.2,641.5 612.2,634.5 "/>
+<polygon class="st10" points="587,648.5 567,641.5 587,634.5 "/>
+<path class="st10" d="M524.5,642.5"/>
+<rect x="664.5" y="387.5" class="st14" width="140" height="30"/>
+<text transform="matrix(1 0 0 1 689.7184 407.5)" class="st4 st5 st6">Share Insights</text>
+<rect x="664.5" y="427.5" class="st14" width="140" height="30"/>
+<text transform="matrix(1 0 0 1 690.5045 447.5)" class="st4 st5 st6">Export Entries</text>
+<rect x="664.5" y="467.5" class="st14" width="140" height="30"/>
+<text transform="matrix(1 0 0 1 690.8906 487.5)" class="st4 st5 st6">Compile Book</text>
+<path class="st4" d="M0,0"/>
+<path class="st10" d="M84.5,482.5"/>
+<polygon class="st10" points="461.5,373.2 454.5,386.5 447.5,373.2 "/>
+<polygon class="st10" points="461.5,435.8 454.5,449.2 447.5,435.8 "/>
+<polygon class="st10" points="461.5,498.5 454.5,511.8 447.5,498.5 "/>
+<text transform="matrix(6.123234e-17 -1 1 6.123234e-17 86.0209 281.502)" class="st9 st5 st11">Setup Process</text>
+</svg>

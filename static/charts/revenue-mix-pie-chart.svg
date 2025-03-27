@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 797.3 800" style="enable-background:new 0 0 797.3 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F2F2F2;}
+	.st1{fill:#2B463C;}
+	.st2{font-family:'Arial-BoldMT';}
+	.st3{font-size:41.8906px;}
+	.st4{fill:#558B6E;}
+	.st5{fill:#333333;}
+	.st6{font-family:'ArialMT';}
+	.st7{font-size:23.8689px;}
+	.st8{fill:#E6B89C;}
+	.st9{fill:#88A38F;}
+	.st10{fill:#D49A76;}
+	.st11{opacity:0.61;fill:#666666;enable-background:new    ;}
+	.st12{font-size:27.2787px;}
+	.st13{font-size:30.6885px;}
+	.st14{fill:#E6B89C;stroke:#FFFFFF;stroke-width:2;}
+</style>
+<path class="st0" d="M783.3,800h-772c-7.7,0-14-6.2-14-14V14c0-7.7,6.2-14,14-14h772c7.7,0,14,6.2,14,14v772
+	C797.3,793.8,791.1,800,783.3,800z"/>
+<text transform="matrix(1 0 0 1 159.7211 64.4771)" class="st1 st2 st3">Projected Revenue Mix</text>
+<rect x="456.1" y="234.4" class="st4" width="34.1" height="34.1"/>
+<text transform="matrix(1 0 0 1 507.2279 260.0039)" class="st5 st6 st7">Physical Journals (35%)</text>
+<rect x="456.1" y="285.6" class="st8" width="34.1" height="34.1"/>
+<text transform="matrix(1 0 0 1 507.2279 311.1514)" class="st5 st6 st7">Subscriptions (30%)</text>
+<rect x="456.1" y="336.7" class="st9" width="34.1" height="34.1"/>
+<text transform="matrix(1 0 0 1 507.2279 362.2988)" class="st5 st6 st7">Add-on Products (15%)</text>
+<rect x="456.1" y="387.9" class="st10" width="34.1" height="34.1"/>
+<text transform="matrix(1 0 0 1 507.2279 413.4463)" class="st5 st6 st7">Team Packages (10%)</text>
+<rect x="456.1" y="439" class="st1" width="34.1" height="34.1"/>
+<text transform="matrix(1 0 0 1 507.2279 464.5947)" class="st5 st6 st7">Partnerships (10%)</text>
+<text transform="matrix(1 0 0 1 206.7102 632.2944)" class="st11 st6 st12">Year 2 Revenue Distribution</text>
+<text transform="matrix(1 0 0 1 138.3505 720.7115)" class="st1 st2 st13">Projected Annual Revenue: €1.2M</text>
+<path class="st14" d="M228.9,327.2L228.9,327.2L228.9,327.2z"/>
+<g>
+	<path class="st1" d="M344.1,189.1c26.1,21.1,45.7,48.8,57.1,80.3l-162.6,54.2L344.1,189.1z"/>
+	<path class="st10" d="M232.3,148.3c38.9,0.7,75.5,13.3,106.6,36.7L232.3,320.5V148.3z"/>
+	<path class="st9" d="M235.5,331.8l167.9-55.9c5.6,17.9,8.5,36.7,8.5,55.6c0,35.5-10.1,69.7-29.3,99.4L235.5,331.8z"/>
+	<path class="st8" d="M228.9,514.5c-40.6,0-78.8-13-110.8-37.3l111.2-141.5l149.9,100.8C344.6,485.4,288.8,514.5,228.9,514.5z"/>
+	<path class="st4" d="M112.6,472.8c-26.9-22.2-46.9-51.3-57.8-84.4c-6-18.4-9-37.5-9-56.9c0-36.7,10.7-71.9,31.2-102.3
+		c33.6-49.6,88.8-79.8,148.5-80.8v179.5v1.5l-2,2.4L112.6,472.8z"/>
+</g>
+</svg>

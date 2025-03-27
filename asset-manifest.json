@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kairos-landing-page/static/css/main.ce3538b4.css",
+    "main.js": "/kairos-landing-page/static/js/main.7ee96a92.js",
+    "index.html": "/kairos-landing-page/index.html",
+    "main.ce3538b4.css.map": "/kairos-landing-page/static/css/main.ce3538b4.css.map",
+    "main.7ee96a92.js.map": "/kairos-landing-page/static/js/main.7ee96a92.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce3538b4.css",
+    "static/js/main.7ee96a92.js"
+  ]
+}
