@@ -128,7 +128,7 @@ const SimpleLandingPage = () => {
               </div>
             </div>
             <div className="hero-image fade-in delay-300">
-              <img src={`${process.env.PUBLIC_URL}/static/images/product/journal_essential.jpg`} alt="Καιρός Smart Journal" />
+              <img src={`${process.env.PUBLIC_URL}/static/images/kairos-hero.webp`} alt="Καιρός Smart Journal" />
             </div>
           </div>
         </div>
