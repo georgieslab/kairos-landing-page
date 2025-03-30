@@ -5,10 +5,14 @@ import '../styles/LandingPage.css';
 import { FaArrowDown, FaLock, FaMugHot, FaCheck, FaBook, FaMobileAlt, FaBrain } from 'react-icons/fa';
 
 const SimpleLandingPage = () => {
+  console.log("SimpleLandingPage component is rendering");
+  
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
+    console.log("SimpleLandingPage useEffect is running");
+    
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true);
@@ -34,8 +38,7 @@ const SimpleLandingPage = () => {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container navbar-container">
           <Link to="/" className="navbar-logo">
-            <img src="/static/icons/kairos-logo.svg" alt="Καιρός" />
-            Καιρός
+          <img src={`${process.env.PUBLIC_URL}/static/icons/kairos-logo.svg`} alt="Καιρός" />
           </Link>
           
           <button className="mobile-toggle" onClick={toggleMenu}>
@@ -80,7 +83,7 @@ const SimpleLandingPage = () => {
               </div>
             </div>
             <div className="hero-image fade-in delay-300">
-              <img src="/static/images/product/journal_essential.jpg" alt="Καιρός Smart Journal" />
+              <img src={`${process.env.PUBLIC_URL}/static/images/product/journal_essential.jpg`} alt="Καιρός Smart Journal" />
             </div>
           </div>
         </div>
@@ -132,7 +135,7 @@ const SimpleLandingPage = () => {
           
           <div className="solution-container">
             <div className="solution-image fade-in">
-              <img src="/static/images/product/nfc_scanning.jpg" alt="NFC Scanning" />
+              <img src={`${process.env.PUBLIC_URL}/static/images/product/nfc_scanning.jpg`} alt="NFC Scanning" />
             </div>
             
             <div className="solution-content">
@@ -188,14 +191,14 @@ const SimpleLandingPage = () => {
           <div className="product-grid">
             <div className="product-card fade-in">
               <div className="product-image">
-                <img src="/static/images/product/journal_essential.jpg" alt="Essential Journal" />
+                <img src={`${process.env.PUBLIC_URL}/static/images/product/journal_essential.jpg`} alt="Essential Journal" />
               </div>
               <div className="product-content">
                 <div className="product-category">Basic</div>
                 <h3 className="product-title">Καιρός Essential</h3>
-                <div className="product-price">€79</div>
+                <div className="product-price">€89</div>
                 <p className="product-description">
-                  Perfect entry point with leatherette journal, 200 pages, and 3-month subscription.
+                  Perfect entry point with leatherette journal, 200 pages, and 1-month complimentary subscription.
                 </p>
                 <Link to="/nda" className="product-button">Learn More</Link>
               </div>
@@ -203,14 +206,14 @@ const SimpleLandingPage = () => {
             
             <div className="product-card fade-in delay-100">
               <div className="product-image">
-                <img src="/static/images/product/journal_insight.jpg" alt="Insight Journal" />
+                <img src={`${process.env.PUBLIC_URL}/static/images/product/journal_insight.jpg`} alt="Insight Journal" />
               </div>
               <div className="product-content">
                 <div className="product-category">Advanced</div>
                 <h3 className="product-title">Καιρός Insight</h3>
-                <div className="product-price">€129</div>
+                <div className="product-price">€149</div>
                 <p className="product-description">
-                  Premium leather journal with brass pen, specialty nibs, and 6-month subscription.
+                  Premium leather journal with brass pen, specialty nibs, and 3-month complimentary subscription.
                 </p>
                 <Link to="/nda" className="product-button">Learn More</Link>
               </div>
@@ -218,18 +221,34 @@ const SimpleLandingPage = () => {
             
             <div className="product-card fade-in delay-200">
               <div className="product-image">
-                <img src="/static/images/product/journal_legacy.jpg" alt="Legacy Journal" />
+                <img src={`${process.env.PUBLIC_URL}/static/images/product/journal_legacy.jpg`} alt="Legacy Journal" />
               </div>
               <div className="product-content">
                 <div className="product-category">Premium</div>
                 <h3 className="product-title">Καιρός Legacy</h3>
-                <div className="product-price">€199</div>
+                <div className="product-price">€249</div>
                 <p className="product-description">
-                  Exquisite hand-bound leather journal with complete journaling ritual kit and 12-month subscription.
+                  Exquisite hand-bound leather journal with complete journaling ritual kit and 6-month complimentary subscription.
                 </p>
                 <Link to="/nda" className="product-button">Learn More</Link>
               </div>
             </div>
+          </div>
+          
+          <div className="subscription-teaser" style={{
+            textAlign: 'center',
+            marginTop: '40px',
+            padding: '30px',
+            backgroundColor: 'rgba(13, 123, 62, 0.1)',
+            borderRadius: '15px',
+          }}>
+            <h3 style={{ marginBottom: '15px', color: '#0D7B3E' }}>Digital Subscription Plans</h3>
+            <p style={{ maxWidth: '800px', margin: '0 auto 20px' }}>
+              After your complimentary period, continue your journaling journey with our flexible subscription options starting at €11.99/month.
+            </p>
+            <Link to="/nda" className="secondary-button">
+              View Subscription Details
+            </Link>
           </div>
         </div>
       </section>
@@ -280,16 +299,24 @@ const SimpleLandingPage = () => {
               </div>
             </div>
             
-            <div className="calendly-container fade-in delay-200">
-              {/* Calendly inline widget */}
-              <iframe
-                src="https://calendly.com/kairosaijournal/"
-                width="100%"
-                height="100%"
-                frameBorder="0"
-                title="Schedule Meeting"
-              />
-            </div>
+            <div className="calendly-container" style={{ 
+                  width: '100%', 
+                  height: '700px',  // Increase height to make it more visible
+                  overflow: 'hidden',
+                  border: 'none',
+                  borderRadius: '8px',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+                  marginTop: '20px' 
+                }}>
+                  <iframe
+                    src="https://calendly.com/georgieslab/google-meet-jump-in"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    title="Schedule Meeting"
+                    style={{ border: 'none' }}
+                  />
+                </div>
           </div>
         </div>
       </section>
@@ -300,7 +327,7 @@ const SimpleLandingPage = () => {
           <div className="footer-container">
             <div>
               <div className="footer-logo">
-                <img src="/static/icons/kairos-logo.svg" alt="Καιρός" />
+                <img src={`${process.env.PUBLIC_URL}/static/icons/kairos-logo.svg`} alt="Καιρός" />
                 Καιρός
               </div>
               <p className="footer-description">
@@ -319,13 +346,13 @@ const SimpleLandingPage = () => {
             </div>
             
             <div>
-              <h3 className="footer-title">Legal</h3>
-              <div className="footer-links">
-                <a href="#" className="footer-link">Privacy Policy</a>
-                <a href="#" className="footer-link">Terms of Service</a>
-                <Link to="/nda" className="footer-link">Confidentiality</Link>
-              </div>
+            <h3 className="footer-title">Legal</h3>
+            <div className="footer-links">
+              <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
+              <Link to="/confidentiality" className="footer-link">Confidentiality</Link>
             </div>
+          </div>
           </div>
           
           <div className="footer-bottom">

@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "type": "directory",
+    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\functions",
+    "contents": {
+      "index.js": {
+        "type": "file",
+        "size": 7597,
+        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\functions\\index.js"
+      }
+    }
+  }
+}

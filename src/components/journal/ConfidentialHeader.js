@@ -219,7 +219,7 @@ const ConfidentialHeader = () => {
   return (
     <CoverPage>
       <ContentWrapper>
-        <LogoImage src="/static/icons/kairos-logo.svg" alt="Καιρός" />
+        <LogoImage src={`${process.env.PUBLIC_URL}/static/icons/kairos-logo.svg`} alt="Καιρός" />
         <Logo>Καιρός</Logo>
         <Tagline>Smart Journal for Mindful Growth</Tagline>
         <CoverTitle>Confidential Information Package</CoverTitle>
@@ -227,7 +227,7 @@ const ConfidentialHeader = () => {
           Bridging analog journaling with AI-powered insights to transform personal reflection into structured growth.
         </CoverDescription>
       </ContentWrapper>
-      <CoverDate>March 14, 2025</CoverDate>
+      <CoverDate>{new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</CoverDate>
     </CoverPage>
   );
 };

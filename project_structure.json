@@ -3,10 +3,267 @@
     "type": "directory",
     "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page",
     "contents": {
+      ".firebaserc": {
+        "type": "file",
+        "size": 56,
+        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\.firebaserc"
+      },
       ".gitignore": {
         "type": "file",
         "size": 310,
         "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\.gitignore"
+      },
+      "apphosting.yaml": {
+        "type": "file",
+        "size": 672,
+        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\apphosting.yaml"
+      },
+      "build": {
+        "type": "directory",
+        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build",
+        "contents": {
+          "asset-manifest.json": {
+            "type": "file",
+            "size": 469,
+            "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\asset-manifest.json"
+          },
+          "favicon.ico": {
+            "type": "file",
+            "size": 3870,
+            "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\favicon.ico"
+          },
+          "index.html": {
+            "type": "file",
+            "size": 1320,
+            "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\index.html"
+          },
+          "logo192.png": {
+            "type": "file",
+            "size": 5347,
+            "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\logo192.png"
+          },
+          "logo512.png": {
+            "type": "file",
+            "size": 9664,
+            "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\logo512.png"
+          },
+          "manifest.json": {
+            "type": "file",
+            "size": 492,
+            "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\manifest.json"
+          },
+          "robots.txt": {
+            "type": "file",
+            "size": 67,
+            "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\robots.txt"
+          },
+          "static": {
+            "type": "directory",
+            "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static",
+            "contents": {
+              "charts": {
+                "type": "directory",
+                "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\charts",
+                "contents": {
+                  "funding-roadmap-chart.svg": {
+                    "type": "file",
+                    "size": 6099,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\charts\\funding-roadmap-chart.svg"
+                  },
+                  "revenue-growth-chart.svg": {
+                    "type": "file",
+                    "size": 4664,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\charts\\revenue-growth-chart.svg"
+                  },
+                  "revenue-mix-pie-chart.svg": {
+                    "type": "file",
+                    "size": 2858,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\charts\\revenue-mix-pie-chart.svg"
+                  },
+                  "use-of-funds-pie-chart-final.svg": {
+                    "type": "file",
+                    "size": 4963,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\charts\\use-of-funds-pie-chart-final.svg"
+                  }
+                }
+              },
+              "css": {
+                "type": "directory",
+                "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\css",
+                "contents": {
+                  "main.ce3538b4.css": {
+                    "type": "file",
+                    "size": 11903,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\css\\main.ce3538b4.css"
+                  },
+                  "main.ce3538b4.css.map": {
+                    "type": "file",
+                    "size": 24026,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\css\\main.ce3538b4.css.map"
+                  }
+                }
+              },
+              "diagrams": {
+                "type": "directory",
+                "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\diagrams",
+                "contents": {
+                  "flexible-journey-architecture.svg": {
+                    "type": "file",
+                    "size": 453655,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\diagrams\\flexible-journey-architecture.svg"
+                  },
+                  "nfc-implementation-diagram.svg": {
+                    "type": "file",
+                    "size": 218187,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\diagrams\\nfc-implementation-diagram.svg"
+                  },
+                  "system-architecture-diagram.svg": {
+                    "type": "file",
+                    "size": 61198,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\diagrams\\system-architecture-diagram.svg"
+                  },
+                  "user-flow-diagram-complete.svg": {
+                    "type": "file",
+                    "size": 9715,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\diagrams\\user-flow-diagram-complete.svg"
+                  }
+                }
+              },
+              "icons": {
+                "type": "directory",
+                "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\icons",
+                "contents": {
+                  "kairos-logo.svg": {
+                    "type": "file",
+                    "size": 880,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\icons\\kairos-logo.svg"
+                  }
+                }
+              },
+              "images": {
+                "type": "directory",
+                "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images",
+                "contents": {
+                  "cards": {
+                    "type": "directory",
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\cards",
+                    "contents": {
+                      "card_ai.jpg": {
+                        "type": "file",
+                        "size": 25839,
+                        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\cards\\card_ai.jpg"
+                      },
+                      "card_journeys.jpg": {
+                        "type": "file",
+                        "size": 2239891,
+                        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\cards\\card_journeys.jpg"
+                      },
+                      "card_physical.jpg": {
+                        "type": "file",
+                        "size": 25986,
+                        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\cards\\card_physical.jpg"
+                      }
+                    }
+                  },
+                  "header-background.jpg": {
+                    "type": "file",
+                    "size": 2239891,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\header-background.jpg"
+                  },
+                  "product": {
+                    "type": "directory",
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\product",
+                    "contents": {
+                      "journal_essential.jpg": {
+                        "type": "file",
+                        "size": 234371,
+                        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\product\\journal_essential.jpg"
+                      },
+                      "journal_insight.jpg": {
+                        "type": "file",
+                        "size": 1199500,
+                        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\product\\journal_insight.jpg"
+                      },
+                      "journal_legacy.jpg": {
+                        "type": "file",
+                        "size": 1030457,
+                        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\product\\journal_legacy.jpg"
+                      },
+                      "nfc_scanning.jpg": {
+                        "type": "file",
+                        "size": 258746,
+                        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\product\\nfc_scanning.jpg"
+                      },
+                      "writing_experience.jpg": {
+                        "type": "file",
+                        "size": 2239891,
+                        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\product\\writing_experience.jpg"
+                      }
+                    }
+                  },
+                  "team": {
+                    "type": "directory",
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\team",
+                    "contents": {
+                      "founder.jpeg": {
+                        "type": "file",
+                        "size": 1895649,
+                        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\images\\team\\founder.jpeg"
+                      }
+                    }
+                  }
+                }
+              },
+              "js": {
+                "type": "directory",
+                "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\js",
+                "contents": {
+                  "main.7ee96a92.js": {
+                    "type": "file",
+                    "size": 269681,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\js\\main.7ee96a92.js"
+                  },
+                  "main.7ee96a92.js.LICENSE.txt": {
+                    "type": "file",
+                    "size": 1652,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\js\\main.7ee96a92.js.LICENSE.txt"
+                  },
+                  "main.7ee96a92.js.map": {
+                    "type": "file",
+                    "size": 2524122,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\build\\static\\js\\main.7ee96a92.js.map"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "deploy.sh": {
+        "type": "file",
+        "size": 679,
+        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\deploy.sh"
+      },
+      "firebase.json": {
+        "type": "file",
+        "size": 235,
+        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\firebase.json"
+      },
+      "functions": {
+        "type": "directory",
+        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\functions",
+        "contents": {
+          "index.js": {
+            "type": "file",
+            "size": 7597,
+            "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\functions\\index.js"
+          },
+          "project_structure.json": {
+            "type": "file",
+            "size": 332,
+            "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\functions\\project_structure.json"
+          }
+        }
       },
       "IMAGE_GUIDE.md": {
         "type": "file",
@@ -20,13 +277,18 @@
       },
       "package-lock.json": {
         "type": "file",
-        "size": 671199,
+        "size": 745335,
         "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\package-lock.json"
       },
       "package.json": {
         "type": "file",
-        "size": 715,
+        "size": 1185,
         "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\package.json"
+      },
+      "project_structure.json": {
+        "type": "file",
+        "size": 34367,
+        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\project_structure.json"
       },
       "public": {
         "type": "directory",
@@ -39,7 +301,7 @@
           },
           "index.html": {
             "type": "file",
-            "size": 1721,
+            "size": 1299,
             "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\public\\index.html"
           },
           "logo192.png": {
@@ -165,12 +427,12 @@
                     "contents": {
                       "journal_essential.jpg": {
                         "type": "file",
-                        "size": 805354,
+                        "size": 234371,
                         "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\public\\static\\images\\product\\journal_essential.jpg"
                       },
                       "journal_insight.jpg": {
                         "type": "file",
-                        "size": 1199500,
+                        "size": 303484,
                         "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\public\\static\\images\\product\\journal_insight.jpg"
                       },
                       "journal_legacy.jpg": {
@@ -178,10 +440,10 @@
                         "size": 1030457,
                         "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\public\\static\\images\\product\\journal_legacy.jpg"
                       },
-                      "nfc_scanning.jpg.jpg": {
+                      "nfc_scanning.jpg": {
                         "type": "file",
-                        "size": 2239891,
-                        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\public\\static\\images\\product\\nfc_scanning.jpg.jpg"
+                        "size": 258746,
+                        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\public\\static\\images\\product\\nfc_scanning.jpg"
                       },
                       "writing_experience.jpg": {
                         "type": "file",
@@ -209,7 +471,7 @@
       },
       "README.md": {
         "type": "file",
-        "size": 3359,
+        "size": 3405,
         "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\README.md"
       },
       "server.js": {
@@ -221,6 +483,11 @@
         "type": "directory",
         "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src",
         "contents": {
+          "ads.md": {
+            "type": "file",
+            "size": 10467,
+            "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\ads.md"
+          },
           "App.css": {
             "type": "file",
             "size": 564,
@@ -228,7 +495,7 @@
           },
           "App.js": {
             "type": "file",
-            "size": 1102,
+            "size": 1008,
             "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\App.js"
           },
           "App.test.js": {
@@ -318,17 +585,22 @@
                 "contents": {
                   "ConfidentialHeader.js": {
                     "type": "file",
-                    "size": 2998,
+                    "size": 5683,
                     "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\components\\journal\\ConfidentialHeader.js"
+                  },
+                  "JournalFooter.js": {
+                    "type": "file",
+                    "size": 2520,
+                    "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\components\\journal\\JournalFooter.js"
                   },
                   "JournalSection.js": {
                     "type": "file",
-                    "size": 8905,
+                    "size": 11258,
                     "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\components\\journal\\JournalSection.js"
                   },
                   "TableOfContents.js": {
                     "type": "file",
-                    "size": 3506,
+                    "size": 4929,
                     "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\components\\journal\\TableOfContents.js"
                   }
                 }
@@ -411,20 +683,20 @@
             "type": "directory",
             "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\pages",
             "contents": {
-              "HomePage.js": {
-                "type": "file",
-                "size": 2784,
-                "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\pages\\HomePage.js"
-              },
               "JournalPage.js": {
                 "type": "file",
-                "size": 25413,
+                "size": 3450,
                 "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\pages\\JournalPage.js"
               },
               "NdaPage.js": {
                 "type": "file",
-                "size": 19583,
+                "size": 19964,
                 "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\pages\\NdaPage.js"
+              },
+              "SimpleLandingPage.js": {
+                "type": "file",
+                "size": 15114,
+                "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\pages\\SimpleLandingPage.js"
               },
               "ThankYouPage.js": {
                 "type": "file",
@@ -452,6 +724,11 @@
                 "size": 2215,
                 "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\styles\\GlobalStyles.js"
               },
+              "LandingPage.css": {
+                "type": "file",
+                "size": 15973,
+                "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\src\\styles\\LandingPage.css"
+              },
               "theme.js": {
                 "type": "file",
                 "size": 2264,
@@ -460,6 +737,11 @@
             }
           }
         }
+      },
+      "tech.md": {
+        "type": "file",
+        "size": 16380,
+        "path": "C:\\Users\\georg\\georgiescoding\\kairos-landing-page\\tech.md"
       }
     }
   }

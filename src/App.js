@@ -1,10 +1,13 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import SimpleLandingPage from './pages/SimpleLandingPage';
 import NdaPage from './pages/NdaPage';
 import ThankYouPage from './pages/ThankYouPage';
 import JournalPage from './pages/JournalPage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import Confidentiality from './pages/Confidentiality';
 
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
@@ -17,12 +20,15 @@ function App() {
 
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<SimpleLandingPage />} />
-        <Route path="/nda" element={<NdaPage setAuthenticated={setAuthenticated} />} />
-        <Route path="/nda/thank-you" element={<ThankYouPage />} />
-        <Route path="/journal" element={<JournalPage />} />
-      </Routes>
+<Routes>
+  <Route path="/" element={<SimpleLandingPage />} />
+  <Route path="/nda" element={<NdaPage setAuthenticated={setAuthenticated} />} />
+  <Route path="/nda/thank-you" element={<ThankYouPage />} />
+  <Route path="/journal" element={<JournalPage />} />
+  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+  <Route path="/terms-of-service" element={<TermsOfService />} />
+  <Route path="/confidentiality" element={<Confidentiality />} />
+</Routes>
     </Router>
   );
 }

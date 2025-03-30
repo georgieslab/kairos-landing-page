@@ -418,6 +418,17 @@ const JournalSection = ({ section }) => {
             </ChartContainer>
           );
           
+        case 'custom':
+          return (
+            <ContentBlock 
+              key={index} 
+              delay={`${baseDelay}s`} 
+              isVisible={isVisible}
+            >
+              {item.render(isVisible)}
+            </ContentBlock>
+          );
+          
         default:
           return null;
       }
