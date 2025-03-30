@@ -1,5 +1,5 @@
 // src/pages/SimpleLandingPage.js
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/LandingPage.css';
 import { FaArrowDown, FaLock, FaMugHot, FaCheck, FaBook, FaMobileAlt, FaBrain } from 'react-icons/fa';
@@ -9,6 +9,23 @@ const SimpleLandingPage = () => {
   
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  // Create refs for each section
+  const problemRef = useRef(null);
+  const solutionRef = useRef(null);
+  const productsRef = useRef(null);
+  const contactRef = useRef(null);
+  
+  // Function to scroll to specific sections
+  const scrollToSection = (ref) => {
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+      // Close mobile menu if open
+      if (menuOpen) {
+        setMenuOpen(false);
+      }
+    }
+  };
 
   useEffect(() => {
     console.log("SimpleLandingPage useEffect is running");
@@ -38,7 +55,7 @@ const SimpleLandingPage = () => {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container navbar-container">
           <Link to="/" className="navbar-logo">
-          <img src={`${process.env.PUBLIC_URL}/static/icons/kairos-logo.svg`} alt="Καιρός" />
+            <img src={`${process.env.PUBLIC_URL}/static/icons/kairos-logo.svg`} alt="Καιρός" />
           </Link>
           
           <button className="mobile-toggle" onClick={toggleMenu}>
@@ -46,10 +63,34 @@ const SimpleLandingPage = () => {
           </button>
           
           <div className={`navbar-links ${menuOpen ? 'active' : ''}`}>
-            <a href="#problem" className="navbar-link">Problem</a>
-            <a href="#solution" className="navbar-link">Solution</a>
-            <a href="#products" className="navbar-link">Products</a>
-            <a href="#contact" className="navbar-link">Contact</a>
+            <button 
+              onClick={() => scrollToSection(problemRef)} 
+              className="navbar-link"
+              style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+            >
+              Problem
+            </button>
+            <button 
+              onClick={() => scrollToSection(solutionRef)} 
+              className="navbar-link"
+              style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+            >
+              Solution
+            </button>
+            <button 
+              onClick={() => scrollToSection(productsRef)} 
+              className="navbar-link"
+              style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+            >
+              Products
+            </button>
+            <button 
+              onClick={() => scrollToSection(contactRef)} 
+              className="navbar-link"
+              style={{ background: 'none', border: 'none', cursor: 'pointer' }}
+            >
+              Contact
+            </button>
             <a href="https://ko-fi.com/kairosaijournal" className="kofi-button" target="_blank" rel="noreferrer">
               <FaMugHot /> Support on Ko-Fi
             </a>
@@ -71,9 +112,13 @@ const SimpleLandingPage = () => {
                 Transform your handwritten reflections into personalized growth opportunities with our NFC-enabled journals and AI analysis.
               </p>
               <div className="hero-buttons">
-                <a href="#problem" className="primary-button fade-in delay-300">
+                <button 
+                  onClick={() => scrollToSection(problemRef)} 
+                  className="primary-button fade-in delay-300"
+                  style={{ border: 'none', cursor: 'pointer' }}
+                >
                   <FaArrowDown /> Learn More
-                </a>
+                </button>
                 <Link to="/nda" className="secondary-button fade-in delay-400">
                   <FaLock /> Get Confidential Info
                 </Link>
@@ -90,7 +135,7 @@ const SimpleLandingPage = () => {
       </section>
 
       {/* Problem Section */}
-      <section id="problem" className="section">
+      <section id="problem" className="section" ref={problemRef}>
         <div className="container">
           <h2 className="section-title">The Personal Growth Challenge</h2>
           <p className="section-subtitle">
@@ -126,7 +171,7 @@ const SimpleLandingPage = () => {
       </section>
 
       {/* Solution Section */}
-      <section id="solution" className="section section-colored">
+      <section id="solution" className="section section-colored" ref={solutionRef}>
         <div className="container">
           <h2 className="section-title">Our Solution</h2>
           <p className="section-subtitle">
@@ -179,7 +224,7 @@ const SimpleLandingPage = () => {
       </section>
 
       {/* Products Section */}
-      <section id="products" className="section">
+      <section id="products" className="section" ref={productsRef}>
         <div className="container">
           <div className="products-heading">
             <h2 className="section-title">Our Products</h2>
@@ -274,7 +319,7 @@ const SimpleLandingPage = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="section">
+      <section id="contact" className="section" ref={contactRef}>
         <div className="container">
           <h2 className="section-title">Contact Us</h2>
           <p className="section-subtitle">
@@ -301,7 +346,7 @@ const SimpleLandingPage = () => {
             
             <div className="calendly-container" style={{ 
                   width: '100%', 
-                  height: '700px',  // Increase height to make it more visible
+                  height: '700px',
                   overflow: 'hidden',
                   border: 'none',
                   borderRadius: '8px',
@@ -338,21 +383,45 @@ const SimpleLandingPage = () => {
             <div>
               <h3 className="footer-title">Quick Links</h3>
               <div className="footer-links">
-                <a href="#problem" className="footer-link">Problem</a>
-                <a href="#solution" className="footer-link">Solution</a>
-                <a href="#products" className="footer-link">Products</a>
-                <a href="#contact" className="footer-link">Contact</a>
+                <button 
+                  onClick={() => scrollToSection(problemRef)} 
+                  className="footer-link"
+                  style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                >
+                  Problem
+                </button>
+                <button 
+                  onClick={() => scrollToSection(solutionRef)} 
+                  className="footer-link"
+                  style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                >
+                  Solution
+                </button>
+                <button 
+                  onClick={() => scrollToSection(productsRef)} 
+                  className="footer-link"
+                  style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                >
+                  Products
+                </button>
+                <button 
+                  onClick={() => scrollToSection(contactRef)} 
+                  className="footer-link"
+                  style={{ background: 'none', border: 'none', padding: 0, color: 'inherit', textAlign: 'left', cursor: 'pointer' }}
+                >
+                  Contact
+                </button>
               </div>
             </div>
             
             <div>
-            <h3 className="footer-title">Legal</h3>
-            <div className="footer-links">
-              <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
-              <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
-              <Link to="/confidentiality" className="footer-link">Confidentiality</Link>
+              <h3 className="footer-title">Legal</h3>
+              <div className="footer-links">
+                <Link to="/privacy-policy" className="footer-link">Privacy Policy</Link>
+                <Link to="/terms-of-service" className="footer-link">Terms of Service</Link>
+                <Link to="/confidentiality" className="footer-link">Confidentiality</Link>
+              </div>
             </div>
-          </div>
           </div>
           
           <div className="footer-bottom">
