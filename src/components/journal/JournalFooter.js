@@ -1,106 +1,185 @@
-// src/components/journal/JournalFooter.js
+// src/components/common/Footer.js
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
-const shimmer = keyframes`
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
-`;
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { FaEnvelope, FaTwitter, FaLinkedin, FaMugHot, FaGithub } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 50px;
-  color: ${({ theme }) => theme.colors.textSecondary};
-  font-size: 0.9rem;
-  position: relative;
-  opacity: 0;
-  animation: ${fadeIn} 1s forwards;
-  animation-delay: 0.2s;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 1px;
-    background: linear-gradient(
-      to right,
-      transparent,
-      ${({ theme }) => theme.colors.brand},
-      ${({ theme }) => theme.colors.accent},
-      transparent
-    );
-  }
+  background-color: ${({ theme }) => theme.colors.brandDark};
+  padding: ${({ theme }) => theme.space['3xl']} ${({ theme }) => theme.space.xl};
+  color: ${({ theme }) => theme.colors.textPrimary};
+`;
+
+const FooterContent = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: ${({ theme }) => theme.space.xl};
 `;
 
 const FooterLogo = styled.div`
-  font-size: 1.8rem;
-  font-weight: 300;
-  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: ${({ theme }) => theme.space.lg};
+  font-size: ${({ theme }) => theme.fontSizes['2xl']};
+  font-weight: ${({ theme }) => theme.fontWeights.light};
   letter-spacing: 2px;
-  
-  background: linear-gradient(
-    to right,
-    ${({ theme }) => theme.colors.brand},
-    ${({ theme }) => theme.colors.accent},
-    ${({ theme }) => theme.colors.brandLight}
-  );
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  animation: ${shimmer} 6s linear infinite;
-  display: inline-block;
+  color: ${({ theme }) => theme.colors.accentLight};
 `;
 
-const FooterTagline = styled.p`
+const LogoImage = styled.img`
+  height: 32px;
+  margin-right: ${({ theme }) => theme.space.sm};
+`;
+
+const FooterSection = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const FooterHeading = styled.h3`
+  font-size: ${({ theme }) => theme.fontSizes.lg};
+  margin-bottom: ${({ theme }) => theme.space.lg};
+  color: ${({ theme }) => theme.colors.accentLight};
+  font-weight: ${({ theme }) => theme.fontWeights.medium};
+`;
+
+const FooterLink = styled(Link)`
   color: ${({ theme }) => theme.colors.textSecondary};
-  margin-bottom: 15px;
-  font-size: 1rem;
-  letter-spacing: 1px;
+  margin-bottom: ${({ theme }) => theme.space.md};
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.accent};
+  }
 `;
 
-const Copyright = styled.p`
+const FooterExternalLink = styled.a`
   color: ${({ theme }) => theme.colors.textSecondary};
-  margin-bottom: 8px;
-  font-size: 0.85rem;
+  margin-bottom: ${({ theme }) => theme.space.md};
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: ${({ theme }) => theme.space.sm};
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.accent};
+  }
 `;
 
-const ConfidentialNote = styled.p`
-  color: ${({ theme }) => theme.colors.accent};
-  font-size: 0.85rem;
-  letter-spacing: 0.5px;
+const SocialLinks = styled.div`
+  display: flex;
+  gap: ${({ theme }) => theme.space.md};
+  margin-top: ${({ theme }) => theme.space.md};
 `;
 
-const JournalFooter = () => {
+const SocialIcon = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: ${({ theme }) => theme.colors.textSecondary};
+  font-size: ${({ theme }) => theme.fontSizes.lg};
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.accent};
+    color: white;
+    transform: translateY(-3px);
+  }
+`;
+
+const FooterCopyright = styled.div`
+  text-align: center;
+  margin-top: ${({ theme }) => theme.space['2xl']};
+  padding-top: ${({ theme }) => theme.space.xl};
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: ${({ theme }) => theme.colors.textSecondary};
+  font-size: ${({ theme }) => theme.fontSizes.sm};
+`;
+
+const SupportButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: ${({ theme }) => theme.space.lg};
+  padding: ${({ theme }) => theme.space.md} ${({ theme }) => theme.space.lg};
+  background-color: #FF5E5B;
+  color: white;
+  border-radius: 30px;
+  font-weight: ${({ theme }) => theme.fontWeights.medium};
+  transition: all 0.3s ease;
+  gap: ${({ theme }) => theme.space.sm};
+
+  &:hover {
+    background-color: #E54B48;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+`;
+
+const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <FooterContainer>
-      <FooterLogo>Καιρός</FooterLogo>
-      <FooterTagline>Smart Journal for Mindful Growth</FooterTagline>
-      <Copyright>&copy; {currentYear} Καιρός. All rights reserved.</Copyright>
-      <ConfidentialNote>This document contains confidential information and is protected under NDA.</ConfidentialNote>
+      <FooterContent>
+        <FooterSection>
+          <FooterLogo>
+            <LogoImage src={`${process.env.PUBLIC_URL}/static/icons/kairos-logo.svg`} alt="Καιρός Logo" />
+            Καιρός
+          </FooterLogo>
+          <p>
+            Bridging traditional journaling with AI-powered insights to
+            transform personal reflection into structured growth.
+          </p>
+          
+          <SocialLinks>
+            <SocialIcon href="https://twitter.com/kairosaijournal" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+              <FaTwitter />
+            </SocialIcon>
+            <SocialIcon href="https://linkedin.com/company/kairosaijournal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <FaLinkedin />
+            </SocialIcon>
+            <SocialIcon href="https://github.com/GeorgiesLab/kairos-landing-page" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <FaGithub />
+            </SocialIcon>
+          </SocialLinks>
+          
+          <SupportButton href="https://ko-fi.com/kairosaijournal" target="_blank" rel="noopener noreferrer">
+            <FaMugHot /> Support on Ko-Fi
+          </SupportButton>
+        </FooterSection>
+
+        <FooterSection>
+          <FooterHeading>Quick Links</FooterHeading>
+          <FooterLink to="/#problem">The Problem</FooterLink>
+          <FooterLink to="/#solution">Our Solution</FooterLink>
+          <FooterLink to="/#products">Products</FooterLink>
+          <FooterLink to="/#contact">Contact</FooterLink>
+          <FooterLink to="/nda">Get Confidential Info</FooterLink>
+        </FooterSection>
+
+        <FooterSection>
+          <FooterHeading>Legal & Contact</FooterHeading>
+          <FooterLink to="/privacy-policy">Privacy Policy</FooterLink>
+          <FooterLink to="/terms-of-service">Terms of Service</FooterLink>
+          <FooterLink to="/confidentiality">Confidentiality</FooterLink>
+          <FooterExternalLink href="mailto:hello@kairos-journal.com">
+            <FaEnvelope /> hello@kairos-journal.com
+          </FooterExternalLink>
+        </FooterSection>
+      </FooterContent>
+
+      <FooterCopyright>
+        &copy; {currentYear} Καιρός. All rights reserved.
+      </FooterCopyright>
     </FooterContainer>
   );
 };
 
-export default JournalFooter;
+export default Footer;

@@ -1,11 +1,11 @@
-// src/components/journal/JournalPage.js
+// src/pages/JournalPage.js
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import ConfidentialHeader from '../components/journal/ConfidentialHeader';
 import TableOfContents from '../components/journal/TableOfContents';
 import JournalSection from '../components/journal/JournalSection';
 import JournalFooter from '../components/journal/JournalFooter';
-import SubscriptionPricing from '../components/journal/SubscriptionPricing';
+import JournalLoader from '../components/common/JournalLoader';
 import { journalSections } from '../data/journalContent';
 
 // Animations
@@ -30,6 +30,15 @@ const backgroundAnimation = keyframes`
   }
 `;
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
 const PageContainer = styled.div`
   width: 100%;
   min-height: 100vh;
@@ -44,6 +53,9 @@ const PageContainer = styled.div`
   animation: ${backgroundAnimation} 30s ease infinite;
   color: ${({ theme }) => theme.colors.textPrimary};
   padding: 20px;
+  opacity: 0;
+  animation: ${fadeIn} 1s forwards;
+  animation-delay: 0.5s;
 `;
 
 const PageWrapper = styled.div`
@@ -233,43 +245,85 @@ const ProductsContent = {
     {
       type: "paragraph",
       text: "Each product tier includes our proprietary NFC technology and provides access to our AI-powered app that transforms handwritten journal entries into structured insights."
-    },
-    {
-      type: "subheading",
-      text: "Digital Subscriptions"
-    },
-    {
-      type: "paragraph",
-      text: "After your complimentary subscription period ends, choose from one of our flexible subscription plans to continue your journaling journey:"
-    },
-    {
-      type: "custom",
-      render: (isVisible) => (
-        <SubscriptionPricing isVisible={isVisible} />
-      )
-    },
-    {
-      type: "highlight",
-      title: "Bundle & Save",
-      text: "Get more value with our special product bundles:",
-      items: [
-        "Essential Bundle (€189): Journal + 12-month subscription (Save €64)",
-        "Insight Bundle (€269): Journal + 12-month subscription (Save €84)",
-        "Legacy Bundle (€379): Journal + 12-month subscription (Save €114)",
-        "Family Bundle (€499): 2 Insight + 2 Essential journals + 12-month subscription for 4 (Save €326)"
-      ]
     }
   ]
 };
 
 const JournalPage = () => {
-  // Removed password protection for easier access
-  const [authenticated, setAuthenticated] = useState(true);
+  const [loading, setLoading] = useState(true);
+  const [allImagesLoaded, setAllImagesLoaded] = useState(false);
+  const [sectionsReady, setSectionsReady] = useState(false);
   
   // Add useEffect to scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+    
+    // Preload critical images
+    const imagesToPreload = [
+      `${process.env.PUBLIC_URL}/static/icons/kairos-logo.svg`,
+      `${process.env.PUBLIC_URL}/static/images/product/journal_essential.jpg`,
+      `${process.env.PUBLIC_URL}/static/images/product/journal_insight.jpg`,
+      `${process.env.PUBLIC_URL}/static/images/product/journal_legacy.jpg`,
+    ];
+    
+    let loadedImages = 0;
+    const totalImages = imagesToPreload.length;
+    
+    imagesToPreload.forEach(src => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => {
+        loadedImages++;
+        if (loadedImages === totalImages) {
+          setAllImagesLoaded(true);
+        }
+      };
+      img.onerror = () => {
+        loadedImages++;
+        console.error(`Failed to load image: ${src}`);
+        if (loadedImages === totalImages) {
+          setAllImagesLoaded(true);
+        }
+      };
+    });
+    
+    // Prepare sections data
+    const prepareJournalSections = () => {
+      // Add product section to the array
+      const updatedSections = [...journalSections];
+      // Find the right position to insert (around the middle or where appropriate)
+      updatedSections.splice(3, 0, ProductsContent);
+      setSectionsReady(true);
+    };
+    
+    prepareJournalSections();
+    
+    // Set a minimum loading time to avoid flashes of content
+    const minLoadingTime = setTimeout(() => {
+      if (allImagesLoaded && sectionsReady) {
+        setLoading(false);
+      }
+    }, 2000);
+    
+    // Fallback if loading takes too long
+    const maxLoadingTime = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+    
+    return () => {
+      clearTimeout(minLoadingTime);
+      clearTimeout(maxLoadingTime);
+    };
+  }, [allImagesLoaded, sectionsReady]);
+  
+  useEffect(() => {
+    if (allImagesLoaded && sectionsReady) {
+      // Delay just a bit to ensure smooth transition
+      setTimeout(() => {
+        setLoading(false);
+      }, 500);
+    }
+  }, [allImagesLoaded, sectionsReady]);
   
   const handleSectionClick = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -281,34 +335,41 @@ const JournalPage = () => {
   // Add the Products section to the sections array
   const updatedSections = [...journalSections];
   // Find the right position to insert (around the middle or where appropriate)
-  // This inserts it after the 4th section (index 3) - adjust as needed
   updatedSections.splice(3, 0, ProductsContent);
 
   return (
-    <PageContainer>
-      <ConfidentialWatermark>CONFIDENTIAL</ConfidentialWatermark>
+    <>
+      <JournalLoader isLoading={loading} />
       
-      <PageWrapper>
-        <GradientBorder>
-          <ConfidentialHeader />
-        </GradientBorder>
+      <PageContainer>
+        <ConfidentialWatermark>CONFIDENTIAL</ConfidentialWatermark>
         
-        <GradientBorder>
-          <TableOfContents 
-            sections={updatedSections} 
-            onSectionClick={handleSectionClick} 
-          />
-        </GradientBorder>
-        
-        {updatedSections.map((section) => (
-          <GradientBorder key={section.id}>
-            <JournalSection section={section} />
+        <PageWrapper>
+          <GradientBorder>
+            <ConfidentialHeader />
           </GradientBorder>
-        ))}
-        
-        <JournalFooter />
-      </PageWrapper>
-    </PageContainer>
+          
+          <GradientBorder>
+            <TableOfContents 
+              sections={updatedSections} 
+              onSectionClick={handleSectionClick} 
+              forceVisible={!loading}
+            />
+          </GradientBorder>
+          
+          {updatedSections.map((section) => (
+            <GradientBorder key={section.id}>
+              <JournalSection 
+                section={section} 
+                forceVisible={!loading}
+              />
+            </GradientBorder>
+          ))}
+          
+          <JournalFooter />
+        </PageWrapper>
+      </PageContainer>
+    </>
   );
 };
 
