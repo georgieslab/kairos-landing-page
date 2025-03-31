@@ -6,6 +6,7 @@ import TableOfContents from '../components/journal/TableOfContents';
 import JournalSection from '../components/journal/JournalSection';
 import JournalFooter from '../components/journal/JournalFooter';
 import JournalLoader from '../components/common/JournalLoader';
+import { journalSections } from '../data/journalContent';
 
 // Animations
 const gradientBorderAnimation = keyframes`
@@ -249,6 +250,7 @@ const ProductsContent = {
 };
 
 const JournalPage = () => {
+
   const [loading, setLoading] = useState(true);
   const [allImagesLoaded, setAllImagesLoaded] = useState(false);
   const [sectionsReady, setSectionsReady] = useState(false);
