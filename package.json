@@ -1,8 +1,8 @@
 {
   "name": "kairos-landing-page",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
-  "homepage": "https://www.kairos-journal.com",
+  "homepage": "https://georgieslab.github.io/kairos-landing-page",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
