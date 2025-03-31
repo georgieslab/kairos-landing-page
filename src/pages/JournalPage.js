@@ -6,7 +6,6 @@ import TableOfContents from '../components/journal/TableOfContents';
 import JournalSection from '../components/journal/JournalSection';
 import JournalFooter from '../components/journal/JournalFooter';
 import JournalLoader from '../components/common/JournalLoader';
-import { journalSections } from '../data/journalContent';
 
 // Animations
 const gradientBorderAnimation = keyframes`
