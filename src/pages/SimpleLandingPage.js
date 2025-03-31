@@ -298,6 +298,8 @@ const SimpleLandingPage = () => {
         </div>
       </section>
 
+      
+
       {/* Ko-fi Widget Section */}
       <section className="section section-colored">
         <div className="container">

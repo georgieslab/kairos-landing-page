@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { FaLock, FaMugHot } from 'react-icons/fa';
+import { FaLock, FaMugHot, FaTwitter, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const SectionContainer = styled.section`
   width: 100vw;
@@ -63,10 +63,40 @@ const ContactInfo = styled.div`
 const EmailLink = styled.a`
   color: ${({ theme }) => theme.colors.accent};
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   transition: color 0.3s ease;
   
   &:hover {
     color: ${({ theme }) => theme.colors.accentLight};
+  }
+`;
+
+const SocialContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+`;
+
+const SocialIcon = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: ${({ theme }) => `rgba(${theme.colors.accentRGB}, 0.1)`};
+  color: ${({ theme }) => theme.colors.accent};
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: ${({ theme }) => theme.colors.accent};
+    color: ${({ theme }) => theme.colors.surface};
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(230, 184, 156, 0.4);
   }
 `;
 
@@ -188,15 +218,42 @@ const ContactSection = () => {
         <ContactInfo>
           <Description>Or contact us directly:</Description>
           <EmailLink href="mailto:hello@kairos-journal.com">
-            hello@kairos-journal.com
+            <FaEnvelope /> hello@kairos-journal.com
           </EmailLink>
+          
+          <SocialContainer>
+            <SocialIcon 
+              href="https://twitter.com/kairosaijournal" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="X (Twitter)"
+            >
+              <FaTwitter />
+            </SocialIcon>
+            <SocialIcon 
+              href="https://linkedin.com/company/kairosaijournal" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
+            </SocialIcon>
+            <SocialIcon 
+              href="https://github.com/GeorgiesLab/kairos-landing-page" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="GitHub"
+            >
+              <FaGithub />
+            </SocialIcon>
+          </SocialContainer>
         </ContactInfo>
 
         <ActionButtons>
           <PrimaryButton to="/nda">
             <FaLock /> Sign NDA & Get Details
           </PrimaryButton>
-          <OutlineButton href="https://ko-fi.com/kairosjournal" target="_blank">
+          <OutlineButton href="https://ko-fi.com/kairosaijournal" target="_blank" rel="noopener noreferrer">
             <FaMugHot /> Support on Ko-Fi
           </OutlineButton>
         </ActionButtons>

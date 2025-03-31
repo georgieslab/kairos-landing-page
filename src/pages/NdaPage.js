@@ -511,7 +511,7 @@ function NdaPage({ setAuthenticated }) {
           <DocumentId>Document ID: KAIROS-NDA-2025</DocumentId>
           <LogoImage src={`${process.env.PUBLIC_URL}/static/icons/kairos-logo.svg`} alt="Καιρός" />
           <LogoSubtitle>AI-Enhanced Journaling Experience</LogoSubtitle>
-          <DateDisplay>Last Updated: March 23, 2025</DateDisplay>
+          <DateDisplay>Last Updated: March 31, 2025</DateDisplay>
         </Header>
         
         <NdaContent>
@@ -662,7 +662,7 @@ function NdaPage({ setAuthenticated }) {
         
         <Contact>
           For any questions regarding this agreement, please contact:<br />
-          <strong>giorgi@kairos.startup</strong>
+          <strong>hello@kairos-journal.com</strong>
         </Contact>
         
         <Footer>
