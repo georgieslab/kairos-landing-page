@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kairos-landing-page/static/css/main.ce3538b4.css",
-    "main.js": "/kairos-landing-page/static/js/main.3edf2912.js",
-    "index.html": "/kairos-landing-page/index.html",
-    "main.ce3538b4.css.map": "/kairos-landing-page/static/css/main.ce3538b4.css.map",
-    "main.3edf2912.js.map": "/kairos-landing-page/static/js/main.3edf2912.js.map"
+    "main.css": "https://georgieslab.github.io/kairos-landing-page/static/css/main.ce3538b4.css",
+    "main.js": "https://georgieslab.github.io/kairos-landing-page/static/js/main.1a0a7e64.js",
+    "index.html": "https://georgieslab.github.io/kairos-landing-page/index.html",
+    "main.ce3538b4.css.map": "https://georgieslab.github.io/kairos-landing-page/static/css/main.ce3538b4.css.map",
+    "main.1a0a7e64.js.map": "https://georgieslab.github.io/kairos-landing-page/static/js/main.1a0a7e64.js.map"
   },
   "entrypoints": [
     "static/css/main.ce3538b4.css",
-    "static/js/main.3edf2912.js"
+    "static/js/main.1a0a7e64.js"
   ]
 }
