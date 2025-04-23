@@ -800,5 +800,14 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    animation: border-animation 2s infinite; /* Add this line for the animation */
+    animation: border-animation 2s infinite;
+}
+
+.hero-content {
+  display: flex
+;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-direction: column-reverse;
 }
