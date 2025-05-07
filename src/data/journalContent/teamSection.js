@@ -10,7 +10,7 @@ export const teamSection = {
         title: 'Connect With Us',
         items: [
           'Email: hello@kairos-journal.com',
-          'Phone: +44 123 456 7890',
+          'Phone: +43 665 65749145',
           'Schedule a call via our calendar booking system'
         ]
       },
