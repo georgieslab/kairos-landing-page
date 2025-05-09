@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "https://www.kairos-journal.com/static/css/main.6d289eff.css",
-    "main.js": "https://www.kairos-journal.com/static/js/main.a9dd3f1c.js",
-    "index.html": "https://www.kairos-journal.com/index.html",
-    "main.6d289eff.css.map": "https://www.kairos-journal.com/static/css/main.6d289eff.css.map",
-    "main.a9dd3f1c.js.map": "https://www.kairos-journal.com/static/js/main.a9dd3f1c.js.map"
+    "main.css": "/static/css/main.6d289eff.css",
+    "main.js": "/static/js/main.1466850f.js",
+    "index.html": "/index.html",
+    "main.6d289eff.css.map": "/static/css/main.6d289eff.css.map",
+    "main.1466850f.js.map": "/static/js/main.1466850f.js.map"
   },
   "entrypoints": [
     "static/css/main.6d289eff.css",
-    "static/js/main.a9dd3f1c.js"
+    "static/js/main.1466850f.js"
   ]
 }
